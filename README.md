@@ -1,3 +1,11 @@
+# Parse links from text via RegEx
+### Supported types:
+- Hashtags
+- Urls
+- emails
+
+### Using in project:
+```
 import EXPHelper.parseWords
 
 
@@ -17,4 +25,7 @@ fun main(args: Array<String>) {
     println("Only hashtags: ${data.filter { it.type == WordType.HASHTAG }}")
 
 }
+```
 
+### Which types we can use:
+___Currently it has only three types: Hashtags, Emails, and Urls___
