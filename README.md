@@ -27,5 +27,36 @@ fun main(args: Array<String>) {
 }
 ```
 
+### Output:
+```
+Any: [
+    WordModel(
+        word=#Samara, 
+        startIndex=35, 
+        endIndex=42, 
+        type=HASHTAG),
+    WordModel(
+        word=bgrebennikovv@gmail.com, 
+        startIndex=73, 
+        endIndex=96, 
+        type=EMAIL), 
+    WordModel(
+        word=https://t.me/fck_stThanks, 
+        startIndex=121, 
+        endIndex=146, 
+        type=URL)
+    ] 
+
+Only hashtags: [
+    WordModel(
+    word=#Samara, 
+    startIndex=35, 
+    endIndex=42, 
+    type=HASHTAG)
+    ]
+```
+> "startIndex" and "endIndex" means position of chars in original text.
+
+
 ### Which types we can use:
 ___Currently it has only three types: Hashtags, Emails, and Urls___
